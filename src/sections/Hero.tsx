@@ -122,7 +122,7 @@ export function Hero() {
           <ul className="no-scrollbar flex items-center gap-6 overflow-x-auto">
             {exhibits.map((e) => (
               <li key={e.id} className="shrink-0">
-                <a href="#exhibits" className="group flex items-center gap-2.5">
+                <a href="#exhibits" className="group flex items-center gap-2.5 py-2.5">
                   <span className="font-mono text-[10.5px] tracking-[0.2em] text-xenon">{e.no}</span>
                   <span className="font-mono text-[11px] tracking-[0.14em] text-platinum/80 uppercase transition-colors group-hover:text-platinum">
                     {e.name}
