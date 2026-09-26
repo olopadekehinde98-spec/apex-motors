@@ -4,6 +4,8 @@ A virtual automotive exhibition — four machines lit and labelled like museum p
 
 **Live:** https://apex-motors-inky.vercel.app
 
+![APEX](docs/hero.jpg)
+
 ```bash
 npm install
 npm run dev      # http://localhost:5173
@@ -33,3 +35,9 @@ npm run build    # production build in dist/
 Hero lighting is keyed to `useImmersive()` rather than a breakpoint, so a touch tablet at 1024px and a reduced-motion desktop both get the lit version instead of an unlit dark frame.
 
 The paint tints are a coloured overlay, labelled in the UI as a preview rather than a real respray. Images come from the Unsplash CDN; swap the photo ids in `content.ts` for the client's own photography before launch.
+
+## Screens
+
+| The exhibit hall | On a phone |
+| --- | --- |
+| ![The exhibit hall](docs/desktop.jpg) | ![APEX on a phone](docs/mobile.jpg) |
