@@ -14,7 +14,7 @@ export function Logo({ className = '', size = 'sm' }: { className?: string; size
       </svg>
       <span className="flex flex-col leading-none">
         <span className={`font-display ${big ? 'text-[1.5rem]' : 'text-[1.15rem]'} font-extrabold tracking-[0.26em] text-platinum`}>{brand.name}</span>
-        <span className={`${big ? 'mt-1.5' : 'mt-1'} font-mono text-[9px] tracking-[0.28em] text-muted`}>{brand.sub}</span>
+        <span className={`${big ? 'mt-1.5' : 'mt-1'} font-mono text-[10px] tracking-[0.26em] text-muted`}>{brand.sub}</span>
       </span>
     </span>
   )
