@@ -45,7 +45,7 @@ export function Hero() {
     >
       {/* The machine */}
       <motion.div className="absolute inset-0 -z-30" style={motionOK ? { scale: bgScale } : undefined}>
-        <Img photo={hero.photo} priority widths={[828, 1280, 1600]} className="opacity-95" />
+        <Img photo={hero.photo} priority widths={[828, 1280, 1600]} className="brightness-125 opacity-100 lg:brightness-100 lg:opacity-95" />
       </motion.div>
 
       {/* Gallery darkness, lifted only where the light falls */}
@@ -56,10 +56,10 @@ export function Hero() {
           style={{ WebkitMaskImage: mask as never, maskImage: mask as never }}
         />
       ) : (
-        <div aria-hidden className="absolute inset-0 -z-20 bg-night/30" />
+        <div aria-hidden className="absolute inset-0 -z-20 bg-night/12" />
       )}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/35 to-night/55 lg:via-night/45 lg:to-night/70" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-night/85 via-night/25 to-transparent lg:from-night/95 lg:via-night/35" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/22 to-night/40 lg:via-night/45 lg:to-night/70" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-night/75 via-night/15 to-transparent lg:from-night/95 lg:via-night/35" />
       <div className="floor absolute inset-x-0 bottom-0 -z-10 h-[38%] opacity-50" />
 
       <motion.div className="frame relative flex-1 pt-32 pb-8" style={motionOK ? { opacity: fade } : undefined}>
